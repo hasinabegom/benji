@@ -175,7 +175,6 @@ body {
 
 .nav ul li a:hover {
   opacity: 1;
-
 }
 
 .nav ul li .bold {
@@ -186,12 +185,12 @@ body {
 // Main area
 
 .main {
-  background-image: url(images/main_bg.png);
+  background-image: url(images/main_bg1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   width: 100%;
-  height: 800px;
+  height: 650px;
 
   .container {
     display: flex;
@@ -223,8 +222,8 @@ body {
 }
 
 .benji img {
-  width: 25rem;
-  top: 8rem;
+  width: 23rem;
+  top: 5rem;
   left: 4rem;
 }
 
@@ -232,25 +231,25 @@ body {
 }
 
 .butter_yellow img {
-  width: 4rem;
-  top: 13rem;
-  left: 30rem;
+  width: 3.8rem;
+  top: 9rem;
+  left: 28rem;
 }
 
 .butter_red img {
   width: 3rem;
-  top: 11rem;
-  left: 32rem;
+  top: 7rem;
+  left: 30rem;
 }
 
 .bee img {
   width: 2.5rem;
   transform: scaleX(-1);
-  left: 7rem;
-  bottom: 26rem;
+  left: 4rem;
+  bottom: 21rem;
 }
 .hero_dog img {
-  width: 30rem;
+  width: 26rem;
   bottom: 0;
 }
 
@@ -259,12 +258,10 @@ body {
   bottom: 0;
 }
 
-
-
 // nft Section
 
 .nft {
-    background-image: url(images/nft_bg.png);
+  background-image: url(images/nft_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
