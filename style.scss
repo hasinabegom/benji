@@ -218,15 +218,13 @@ section {
 
 .social_icons {
   display: flex;
-  gap: 2rem;
-  padding-top: 1rem;
+  gap: 1rem;
+
+  img {
+    width: 4rem;
+  }
 }
-.twitter img {
-  width: 4rem;
-}
-.discord img {
-  width: 4rem;
-}
+
 
 .hero_dog,
 .sun,
@@ -247,7 +245,6 @@ section {
   position: absolute;
   right: -5rem;
   top: 3rem;
-  
 }
 
 .benji img {
@@ -643,8 +640,9 @@ section {
   }
 }
 
-////////////////////////////  Utility_Area ////////////////////////////
+////////////////////////////  Gen2_Area ////////////////////////////
 .gen2 {
+  padding-bottom: 4rem;
   background-image: url(images/gen2/gen2_bg.png);
   a,
   p,
@@ -652,7 +650,7 @@ section {
     font-family: "blueberry";
     color: var(--text_clr_main);
     font-size: 1.9rem;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   p,
@@ -661,7 +659,11 @@ section {
 }
 
 .gen2_top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
+
   p {
     max-width: calc(100% - 5rem);
     margin: 0 auto;
@@ -671,5 +673,105 @@ section {
   }
   .light_clr {
     color: #fa99af;
+  }
+}
+.gen2_top_text {
+  position: relative;
+
+  .scretch_img {
+    position: absolute;
+    left: 20rem;
+    bottom: -1rem;
+  }
+}
+
+.clapboard img {
+  margin-top: 1rem;
+  width: 10rem;
+}
+
+.gen2_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  p {
+    font-size: 1.5rem;
+    width: 83%;
+  }
+}
+
+.con_with_banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dog_banner {
+  position: absolute;
+  img {
+    width: 8rem;
+  }
+}
+
+.dog_banner_first {
+  top: 3rem;
+  left: -2rem;
+}
+
+.dog_banner_third {
+  top: -0.5rem;
+  right: -2rem;
+}
+
+.dog_banner_second {
+  top: 1rem;
+  left: -14rem;
+}
+
+.dog_banner_fourth {
+  top: -0.5rem;
+  right: -14rem;
+}
+
+p .light_clr {
+  color: #fa99af;
+}
+p .red_clr {
+  color: var(--text_clr_red);
+}
+p .comma {
+  font-family: "Special Elite";
+}
+
+////////////////////////////  Woof_Area ////////////////////////////
+
+.woof {
+  padding: 10rem 0;
+  background-color: #EBBEB1;
+}
+
+.woof_content {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.woof_left {
+  img {
+    max-width: 35rem;
+    width: 100%;
+  }
+}
+
+.woof_right {
+  h3 {
+    color: var(--text_clr_main);
+    font-size: 3rem;
   }
 }
