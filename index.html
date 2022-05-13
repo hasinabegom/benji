@@ -7,40 +7,18 @@
     <!-- main CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- responsive CSS -->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <!-- Owl CSS -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/css/owl.theme.green.min.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="assets/css/all.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
     <!-- Title icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="56x56"
-      href="assets/images/fav-icon/icon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="assets/css/flaticon.css"
-      type="text/css"
-      media="all"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="assets/css/all.min.css"
-      type="text/css"
-      media="all"
-    />
+    <link rel="icon" type="image/png" sizes="56x56" href="#" />
 
     <title>Benji</title>
   </head>
@@ -48,21 +26,24 @@
     <!--==================================================-->
     <!-----Start Header Section ----->
     <!--===================================================-->
-    <header>
+    <header uk-sticky="bottom: #offset">
       <div class="container">
         <div class="nav">
           <div class="nav_left">
             <span><a href="#">benji!</a></span>
           </div>
-          <nav class="nav_right flex-row">
-            <ul class="flex-row">
-              <li><a href="#" class="bold">Home</a></li>
-              <li><a href="#">Nft</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Utility</a></li>
-              <li><a href="#">Gen2</a></li>
-              <li><a href="#">Woof!</a></li>
+          <nav class="nav_right">
+            <i class="fa-solid fa-bars hamburger"></i>
+            <ul class="">
+              <i class="fa-solid fa-close hamburger"></i>
+
+              <li><a href="#home" class="bold">Home</a></li>
+              <li><a href="#nft">Nft</a></li>
+              <li><a href="#history">History</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#utility">Utility</a></li>
+              <li><a href="#gen2">Gen2</a></li>
+              <li><a href="#woof">Woof!</a></li>
             </ul>
           </nav>
         </div>
@@ -71,15 +52,19 @@
     <!--==================================================-->
     <!-----Start Main Section ----->
     <!--===================================================-->
-    <section class="main">
+    <section class="main" id="home">
       <div class="container">
         <div class="main_top">
           <div class="social_icons">
             <div class="twitter">
-              <img src="images/main/twitter.png" alt="" />
+              <a href="#"
+                ><img src="images/main/twitter.png" alt="twitter"
+              /></a>
             </div>
             <div class="discord">
-              <img src="images/main/discord.png" alt="" />
+              <a href="#"
+                ><img src="images/main/discord.png" alt="discord"
+              /></a>
             </div>
           </div>
           <div class="benji">
@@ -98,72 +83,119 @@
         <div class="bee">
           <img src="images/main/bee.gif" alt="" />
         </div>
-        <!-- dog -->
       </div>
+      <!-- dog -->
       <div class="hero_dog">
         <img src="images/main/main_dog.png" alt="" />
       </div>
       <div class="grass">
-        <img src="images/grass1.png" alt="" />
+        <div class="grass_lg">
+          <img src="images/grass1.png" alt="" />
+        </div>
+        <div class="grass_sm">
+          <img src="images/main/grass_mbl.png" alt="" />
+        </div>
       </div>
     </section>
-
     <!--==================================================-->
     <!-----Start NFT Section ----->
     <!--===================================================-->
-    <section class="nft">
-      <div class="container">
-        <div class="nft_top">
-          <div class="nft_left">
-            <div class="yellow_love">
-              <img src="images/nft/yellow_love.jpg" alt="" />
-            </div>
-            <div class="red_love">
-              <img src="images/nft/red_Love.jpg" alt="" />
-            </div>
-            <div class="nft_text">
-              <h3>the BENJI nft</h3>
-              <p>
-                If ever there was a voice to bark out loud for all the lovable
-                misfits and degens out there, it's this huggable hero.
-              </p>
-              <p>
-                Benji and his team of frens are on a mission to bring
-                tail-wagging vibes and <span>unprecedented utility</span> to the
-                Web 3.0 space.
-              </p>
-              <p>All mutts allowed.</p>
-            </div>
-          </div>
-
-          <div class="nft_right">
-            <div class="dog_gf">
-              <img src="images/nft/nft_dog.gif" alt="dog_gif" />
-            </div>
-            <div class="bug"><img src="images/nft/bug.jpg" alt="" /></div>
-            <div class="bone"><img src="images/nft/bone.jpg" alt="" /></div>
-          </div>
+    <section class="nft" id="nft">
+      <div class="loves">
+        <div class="red_love_sm sm">
+          <img src="images/nft/red_Love.jpg" alt="" />
         </div>
-
-        <div class="nft_bottom">
-          <div class="cam_dog">
-            <img src="images/nft/camdog.png" alt="" />
-          </div>
-          <h3>#underdog</h3>
+        <div class="yellow_love_sm sm">
+          <img src="images/nft/yellow_love.jpg" alt="" />
         </div>
       </div>
-      <div class="nft_pngs"></div>
+
+      <div class="container">
+        <div class="nft_content">
+          <div class="nft_top">
+            <div class="nft_left">
+              <div class="yellow_love lg">
+                <img src="images/nft/yellow_love.jpg" alt="" />
+              </div>
+              <div class="red_love lg">
+                <img src="images/nft/red_Love.jpg" alt="" />
+              </div>
+              <div class="nft_text">
+                <div class="text_header">
+                  <h3>the BENJI nft</h3>
+                </div>
+                <div class="lg">
+                  <p>
+                    If ever there was a voice to bark out loud for all the
+                    lovable misfits and degens out there, it's this huggable
+                    hero.
+                  </p>
+                  <p>
+                    Benji and his team of frens are on a mission to bring
+                    tail-wagging vibes and <span>unprecedented utility</span> to
+                    the Web 3.0 space.
+                  </p>
+                  <p>All mutts allowed.</p>
+                </div>
+              </div>
+
+              <div class="nft_text sm">
+                <p>
+                  If ever there was a voice to bark out loud for all the lovable
+                  misfits and degens out there, it's this huggable hero.
+                </p>
+                <p>
+                  Benji and his team of frens are on a mission to bring
+                  tail-wagging vibes & unprecedented utility to Web 3.
+                </p>
+              </div>
+            </div>
+
+            <div class="nft_right">
+              <div class="dog_gf">
+                <img src="images/nft/nft_dog.gif" alt="dog_gif" />
+              </div>
+              <div class="bug"><img src="images/nft/bug.jpg" alt="" /></div>
+              <div class="bone"><img src="images/nft/bone.jpg" alt="" /></div>
+            </div>
+          </div>
+
+          <div class="nft_bottom">
+            <div class="cam_dog lg">
+              <img src="images/nft/camdog.png" alt="" />
+            </div>
+            <h3 class="lg">#underdog</h3>
+
+            <div class="sm bottom_text_sm">
+              <h2>All Mutts Allowed</h2>
+              <p>
+                In 1971, a kid from Texas pitched Hollywood a film about a
+                little dog with a big heart. Every studio passed.
+              </p>
+              <p>
+                He and his wife produced the movie independently and then
+                distributed it city to city, theater by theater.
+              </p>
+              <p>It grossed $49 million. ($286 in today's dollars!)</p>
+            </div>
+          </div>
+          <div class="cam_dog_sm sm">
+            <img src="images/nft/camdog.png" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
-
     <!--==================================================-->
-    <!-----Start Benji Section ----->
+    <!-----Start History Section ----->
     <!--===================================================-->
-
-    <section class="history">
+    <section class="history" id="history">
       <div class="container">
         <div class="history_content">
           <div class="history_left">
             <div class="frame">
+              <img src="images/history/frame.png" alt="" />
+            </div>
+            <div class="frame_sm sm">
               <img src="images/history/frame.png" alt="" />
             </div>
             <div class="frame_dog">
@@ -171,11 +203,22 @@
             </div>
           </div>
 
-          <div class="history_right">
+          <div class="history_right sm">
+            <div class="flower_gif_sm sm">
+              <img src="images/history/flower_gif.gif" alt="" />
+            </div>
+            <p>
+              Over 1 Billion people have watched Benji movies, TV specials and
+              streamed films. All the while, that kid refused to ever sell his
+              little mutt to Hollywood.
+            </p>
+          </div>
+
+          <div class="history_right lg">
             <div class="flower_gif">
               <img src="images/history/flower_gif.gif" alt="" />
             </div>
-            <h3>BENJI</h3>
+            <h3 class="lg">BENJI</h3>
             <p>
               In 1970, a kid from Texas pitched Hollywood a film about a little
               dog with a big heart. Every studio passed.
@@ -194,8 +237,10 @@
         </div>
       </div>
     </section>
-
-    <section class="team">
+    <!--==================================================-->
+    <!-----Start Team Section ----->
+    <!--===================================================-->
+    <section class="team" id="team">
       <div class="container">
         <div class="team_content">
           <div class="team_top">
@@ -309,7 +354,7 @@
     <!--==================================================-->
     <!-----Start Utility Section ----->
     <!--===================================================-->
-    <section class="utility">
+    <section class="utility" id="utility">
       <div class="container">
         <div class="utility_content">
           <div class="sorrow_dog">
@@ -384,9 +429,9 @@
       </div>
     </section>
     <!--==================================================-->
-    <!-----Start Utility Section ----->
+    <!-----Start Gen2 Section ----->
     <!--===================================================-->
-    <section class="gen2">
+    <section class="gen2" id="gen2">
       <div class="container">
         <div class="gen2_content">
           <div class="gen2_top">
@@ -483,7 +528,7 @@
       </div>
     </section>
 
-    <footer class="woof">
+    <footer class="woof" id="woof">
       <div class="container">
         <div class="woof_content">
           <div class="woof_left">
@@ -493,7 +538,7 @@
           <div class="woof_right">
             <h3>#woof</h3>
 
-            <div class="social_icons">
+            <div class="footer_social_icons">
               <a href="#"
                 ><img src="images/woof/discord.png" alt="discord"
               /></a>
@@ -505,6 +550,8 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/uikit.min.js"></script>
   </body>
 </html>

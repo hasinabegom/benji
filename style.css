@@ -149,6 +149,19 @@ section {
   overflow: hidden;
 }
 
+.sm {
+  display: none;
+}
+
+header {
+  z-index: 999;
+  background-color: white;
+  right: 0;
+  left: 0;
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,18 +173,42 @@ section {
   padding: 0.5rem 0;
 }
 
+nav .hamburger {
+  display: none;
+}
+
+nav,
+nav ul,
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav_left {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
 }
 
 .nav_left a {
   font-weight: 900;
   color: var(--bg);
+  border: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .nav_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -227,6 +264,7 @@ section {
 }
 
 .social_icons {
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,8 +317,9 @@ section {
 }
 
 .hero_dog img {
-  width: 26rem;
+  width: 13.5rem;
   bottom: 0;
+  left: 8rem;
 }
 
 .grass img {
@@ -288,11 +327,16 @@ section {
   bottom: 0;
 }
 
+.grass_sm {
+  display: none;
+}
+
 .nft {
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  position: relative;
+  padding: 8rem 0 12rem 0;
   background-image: url(images/nft_bg.png);
   text-align: center;
+  height: 100%;
 }
 
 .nft .nft_top {
@@ -387,7 +431,7 @@ section {
 }
 
 .history {
-  padding: 3.5rem 0;
+  padding: 5rem 0;
   background-image: url(images/history/history_bg1.png);
 }
 
@@ -445,7 +489,7 @@ section {
 
 .team {
   background-image: url(images/team/team_bg.png);
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .team_content {
@@ -539,7 +583,7 @@ section {
 }
 
 .utility {
-  padding: 3rem 0 1rem 0;
+  padding: 5rem 0 1rem 0;
   background-image: url(images/utility/utility_bg.png);
 }
 
@@ -586,7 +630,7 @@ section {
   font-family: "blueberry";
   color: var(--text_clr_red);
   font-size: 2.2rem;
-  z-index: 999;
+  z-index: 5;
 }
 
 .lock_pin img {
@@ -838,7 +882,7 @@ p .comma {
 
 .woof {
   padding: 10rem 0;
-  background-color: #EBBEB1;
+  background-color: #ebbeb1;
 }
 
 .woof_content {
@@ -862,5 +906,21 @@ p .comma {
 .woof_right h3 {
   color: var(--text_clr_main);
   font-size: 3rem;
+}
+
+.footer_social_icons {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer_social_icons img {
+  width: 4rem;
+}
+
+.sticky {
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
