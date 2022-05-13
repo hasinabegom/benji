@@ -149,7 +149,7 @@ section {
   overflow: hidden;
 }
 
-.sm {
+.sm, ul .extra_sm {
   display: none;
 }
 
@@ -310,8 +310,8 @@ li {
 
 .bee img {
   width: 2.5rem;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  -webkit-transform: rotate(-20deg) scaleX(-1);
+          transform: rotate(-20deg) scaleX(-1);
   left: 4rem;
   bottom: 20rem;
 }

@@ -130,8 +130,8 @@
   }
   .loves {
     position: absolute;
-    top: 10rem;
-    right: 50%;
+    top: 2rem;
+    right: 2rem;
   }
   .loves .yellow_love_sm {
     position: absolute;
@@ -144,7 +144,7 @@
     position: absolute;
   }
   .loves .red_love_sm img {
-    width: 2rem;
+    width: 1.5rem;
   }
   .nft_right {
     margin-top: 2rem;
@@ -188,13 +188,67 @@
     gap: 1rem;
   }
   .frame_dog img {
-    width: 18rem;
+    max-width: 18rem;
+    width: 100%;
   }
   .flower_gif_sm img {
     position: absolute;
     left: -2rem;
     top: -4rem;
     width: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main .social_icons {
+    display: none;
+  }
+  .main .benji_logo img {
+    width: 18.5rem;
+  }
+  .main .bee img {
+    width: 2.5rem;
+    left: 4rem;
+    bottom: 20rem;
+  }
+  ul .extra_sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+    margin-left: 3rem;
+  }
+  ul .extra_sm img {
+    width: 3rem;
+  }
+  .nft .cam_dog_sm img {
+    bottom: 2rem;
+  }
+  .nft .bone img {
+    max-width: 6rem;
+    left: -2rem;
+    bottom: -1.2rem;
+  }
+  .utility_top h2 {
+    font-size: 1.9rem;
+  }
+  .flower_gif_sm img {
+    left: -1rem;
+    top: -4rem;
+    width: 3.5rem;
+  }
+  .utility .thum_img {
+    display: none;
+  }
+  .gen2_content p {
+    font-size: 1.5rem;
+  }
+  .gen2_top_text .scretch_img {
+    display: none;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
